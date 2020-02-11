@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eric Jho Personal Website</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/Rithm.png" alt="Rithm logo" class="logo" id= "home">
+
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop">
+                        <img src="images/exit.svg" alt="exit menu">
+                    </li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <img src="images/jho" alt="main name" class="name" >
+            
+            <h1 class = "student"> Student @ Rithm School</h1>
+            <p class="subhead">Future Software Developer</p>
+
+            <img src="images/scroll.svg" alt="scroll down" class="scroll hide-mobile show-desktop">
+        </section>
+    </div>
+
+    <div class="blue-container" id="about">
+        <div class="container">
+            <ul>
+                <li>
+                        <h3>About Me</h3>
+                        <p class = "intro"> I am a graduate from UC Berkeley, majored in Economics as well as a Certificate in Technology Entrepreneurship through the College of Engineering. In the past, I had the opportunity to serve in the Korean Army as a Special Task Force commander, where I advised and led a high- performance team of 12 enlisted personnel training for counter-terrorism operations in Korea.  Through this experience, I have cultivated excellent cross-cultural communication skills and have developed an optimistic attitude to remain persistent regardless of any setbacks. Currently, I have a deep passion for software engineering and mental health industry. At first, social media made it possible for friends around the world to keep in touch but now it has evolved into something much bigger. A decade of scrolling, liking and posting pictures led to major privacy concerns, mental illness, and ironically disturbing people to have genuine relationships together. I believe that in the next decade, we will see a rise in a software that focuses on helping people who are too exhausted and scarred from existing technologies. This is one of the biggest motivating factors for me to learn software Engineering because I want to be a part of the movement where I could create software that can tackle mental illness and create an online safe haven for people around the world.  </p>
+                        
+                        <a href="https://drive.google.com/file/d/1NGWkyekTtmOEfMQpT_UiRRICEPpfHI5v/view?usp=sharing" class="cta">Resume</a>
+
+                 </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="gray-container" id = "contact">
+        <div class="container" id="ericportrait">
+            <section>
+                    <h6 class = "contacts"> Contact</h6>
+                    <img src="images/Portrait.png" width="200" height="200" alt="portrait" class="eric">            
+                    <p class="phone">Phone : 510 - ### - 0798 </p>
+                    <p class="emailinfo"> Email : ej### @ berkeley.edu </p>
+                    <a href="https://www.linkedin.com/in/eric-namgyu-jho-0b3575178/"> <img src="images/linkedin.png" width="30" height="30" alt="portrait" class="eric">   </a>
+                    <a href="https://www.facebook.com/namgyujho"> <img src="images/FB.png" width="30" height="30" alt="portrait" class="eric">   </a>
+
+
+
+            </section>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2> Do you have any questions for me? </h2>
+        <a href= "mailto:ejho1#@berkeley.edu" class="email"> Email Me</a>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <a href="#home">
+                    <img src= "images/arrow.png" width ="50" height ="50" class="arrow" alt="logo">
+                </a>
+                <p class="top"> Return to Top</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+    
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
+    </script>
+
+</body>
+</html>
